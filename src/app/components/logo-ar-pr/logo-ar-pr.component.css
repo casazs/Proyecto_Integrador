@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logoAP{
+    height: 150px;
+}
+.socials{
+    width: 40px;
+    margin-right: 0.7em;
+}

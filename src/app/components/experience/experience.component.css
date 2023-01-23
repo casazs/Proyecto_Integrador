@@ -1,0 +1,15 @@
+.row{
+    margin-top: 80px;
+    background-color: #222725;
+    padding: 10px;
+}
+h2,h3{
+    color:#E4E6C3;
+    font-family: 'Times New Roman', Times, serif;
+}
+h3,#years{
+    display: inline;
+}
+p{
+    color: #F7F7F2;
+}
