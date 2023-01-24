@@ -6,7 +6,7 @@ p{
     color: #F7F7F2;
 }
 /*  Style in Name*/
-.import{
+#nombre{
     font-size: 19px;
     font-weight: bold;
     margin-top: 25px;

@@ -7,17 +7,13 @@ import { PersonaService } from 'src/app/service/persona.service';
   templateUrl: './aboutme.component.html',
   styleUrls: ['./aboutme.component.css']
 })
-export class AboutmeComponent implements OnInit {
-
-  persona: persona = new persona("","","") ;
-
-   constructor (public personaService: PersonaService);{}
+export class  AboutmeComponent implements OnInit{
+  persona: persona = new persona(" ", " "," ");
+  
+  constructor(public personaService: PersonaService) { }
+   
 
   ngOnInit(): void {
-   this.personaService.getPersona().suscribe(data -> {this.persona = data})
+   this.personaService.getPersona().subscribe( data => {this.persona = data});
   }
-
-  
- 
-
-}
+  }
