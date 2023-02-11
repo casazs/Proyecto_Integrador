@@ -3,10 +3,10 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-logo-ar-pr',
-  templateUrl: './logo-ar-pr.component.html',
-  styleUrls: ['./logo-ar-pr.component.css']
+  templateUrl: './logo-ap.component.html',
+  styleUrls: ['./logo-ap.component.css']
 })
-export class LogoArPrComponent {
+export class LogoAPComponent {
 
   constructor(private router:Router) { }
 
