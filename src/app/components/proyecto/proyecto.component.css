@@ -1,6 +1,7 @@
 .row{
-    padding: 20px;
-    background-color: #a1b5cb;
+    background-color: #222725;
+    padding-top: 10px;
+    padding:10px;
 }
 .contenedor{
     width: auto;
@@ -12,4 +13,11 @@
 .img-proyecto{
     box-shadow: 10px 10px 30px #000000;
     box-shadow: ejeX ejeY difumasion color;
+}
+h2,h3{
+    color:#E4E6C3;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    color: #F7F7F2;
 }
