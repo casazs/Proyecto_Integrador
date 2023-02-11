@@ -1,9 +1,29 @@
 <div class="row">
     <h2>Experience</h2>
+
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-secondary" routerLink="/nuevaexp" *ngIf="isLogged">New experience</button>
+    </div>
+   
+    <div class="col lg 1"></div>
     <div class="col-lg-11">
-        <ul>
-            <li>    <h3>Roguz</h3><p id="years">  2018-2022</p>  <p>More than a job, it was just unloading trucks and organizing product delivery routes with my father.</p></li>
-            <li>    <h3>trabajo 2</h3> <p id="years"> xxxx - xxxx </p>  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae cupiditate perspiciatis esse ipsam non, porro, quasi labore magni maxime error itaque cum dolorum mollitia blanditiis eaque quas saepe quam earum?</p></li>
-        </ul>
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                    <td>
+                        <h2>{{Experiencia.nombreE}}</h2>
+                    </td>
+                    <td>{{Experiencia.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
