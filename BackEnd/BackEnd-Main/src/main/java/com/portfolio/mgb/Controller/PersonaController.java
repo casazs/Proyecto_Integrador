@@ -1,7 +1,9 @@
 
 package com.portfolio.mgb.Controller;
 
+import com.portfolio.mgb.Dto.dtoEducacion;
 import com.portfolio.mgb.Dto.dtoPersona;
+import com.portfolio.mgb.Entity.Educacion;
 import com.portfolio.mgb.Entity.Persona;
 import com.portfolio.mgb.Security.Controller.Mensaje;
 import com.portfolio.mgb.Service.ImpPersonaService;
@@ -13,6 +15,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -50,7 +53,7 @@ public class PersonaController {
         return new ResponseEntity(new Mensaje("Educacion eliminada"), HttpStatus.OK);
     }*/
     
-    /*@PostMapping("/create")
+    @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody dtoEducacion dtoeducacion){
         if(StringUtils.isBlank(dtoeducacion.getNombreE())){
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
@@ -65,7 +68,7 @@ public class PersonaController {
         personaService.save(educacion);
         return new ResponseEntity(new Mensaje("Educacion creada"), HttpStatus.OK);
                 
-    }*/
+    }
     
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoPersona dtopersona){

@@ -1,35 +1,40 @@
 .row{
-    background-color: #222725;
     padding: 20px;
+}
+div{
+    background-color: #222725;
+    text-align: center;
 }
 p{
     color: #F7F7F2;
-}
-/*  Style in Name*/
-.import{
-    font-size: 19px;
-    font-weight: bold;
-    margin-top: 25px;
 }
 h1{
     color:#E4E6C3;
     font-family: 'Times New Roman', Times, serif;
 }
-/* Style in Photo*/
-
-    @media(min-width: 1024px){
-        #foto_perfil{
-                position: absolute;
-                width: 20%;
-                border-radius: 60%;
-                box-shadow: 1px 1px 1px #E4E6C3;
-                top: 650px; /*I want mi Photo in half banner and the About me*/
-        }
+/*Estilo de la foto de perfil*/
+@media (min-width: 576px){
+    #fotodeperfil{
+        position: absolute;
+        width: 15%;
+        border-radius: 70%;
+        left: 1%;
+        top:550px;
     }
-
+}
+@media (max-width: 575px){
+    #fotodeperfil{
+        position: absolute;
+        width: 30%;
+        border-radius: 100%;
+        left: 33%;
+        top:950px;
+    }
+}
 
 /*etiqueta nombre*/
 #nombre{
     font-weight: bold;
     margin-top: 30%;
+    font-family: 'Times New Roman', Times, serif;
 }
