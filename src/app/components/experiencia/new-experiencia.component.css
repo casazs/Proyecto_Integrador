@@ -1,3 +1,11 @@
 label{
     color: #F7F7F2;
+    
+}
+ .form-group{
+    margin: 50px;
+   
+ }
+imput{
+    size: 200px;
 }
