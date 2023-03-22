@@ -52,7 +52,7 @@ import { NewSkillComponent } from './components/hys/new-skill.component';
     BrowserAnimationsModule,
     FormsModule,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule,
+    HttpClientModule
   ],
   providers: [
     interceptorProvider
