@@ -16,10 +16,10 @@ h1{
 @media (min-width: 576px){
     #fotodeperfil{
         position: absolute;
-        width: 15%;
-        border-radius: 70%;
+        width: 17%;
+        border-radius: 10%;
         left: 1%;
-        top:550px;
+        top:690px;
     }
 }
 @media (max-width: 575px){
@@ -35,6 +35,11 @@ h1{
 /*etiqueta nombre*/
 #nombre{
     font-weight: bold;
-    margin-top: 30%;
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#subtittle{
+    font-weight: bold;
+    font-size: 12px;
     font-family: 'Times New Roman', Times, serif;
 }

@@ -3,13 +3,16 @@
     padding:10px;
     background-color: #222725;
 }
-h2,h3{
+h2{
     color:#E4E6C3;
     font-family: 'Times New Roman', Times, serif;
 }
 h3,#years{
     display: inline;
 }
-p{
+td{
     color: #F7F7F2;
+}
+#nombredu{
+    color:#e9ecef;
 }
